@@ -40,7 +40,7 @@ async def parse_metro_block(session, product_block):
     return {
         'id': product_id,
         'name': name,
-        'url': url,
+        'url': f'{template_url}{url}',
         'regular_price': regular_price,
         'promo_price': promo_price if promo_price is not None else '',
         'brand': brand
